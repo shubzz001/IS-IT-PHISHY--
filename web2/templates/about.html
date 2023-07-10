@@ -1,0 +1,140 @@
+
+
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Is It Phishy</title>
+    <script src="https://kit.fontawesome.com/d5f016b17c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="{% static  'CSS/style.css' %}">
+</head>
+<body>
+    
+
+
+    <nav class="navbar bg-dark">
+
+        <div class="container">
+
+
+            <a href="{% url 'home' %}"><img src="{% static  './img/logo1.png' %}" class="logo lg-heading text-light" height="150px"></a>
+
+            <ul class="nav_items ">
+                <li class="list-items" > <a href="{% url 'home' %}">home</a></li>
+                <li class="list-items"> <a href="{% url 'about'%}">about</a></li>
+                <li class="list-items"> <a href="{% url 'contact'%}">contact</a></li>
+                <li class="list-items"> <a href="{% url 'complaint'%}">complaint</a></li>
+                <li class="list-items"> <a href="{% url 'logout' %}">Logout</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+
+
+    <section class="about">
+        <div class="container">
+            <h2 class="lg-heading text-black about-heading">About Us</h2>
+
+            <p class="text-gray"> Is is a free service that analyzes URLs for viruses, worms, trojans and other kinds of malicious content.We have come across many Cyber Crime cases which mostly involved phishing attacks and due to lack of knowledge of end users, the attackers and stole their personal information and money. Our goal is to make the internet a safer place through collaboration between members of the antivirus industry, researchers and government institutes and make people aware about Cyber Crime.</p>
+
+         <div class="about-wrapper">
+
+                <div class="left">
+                    <ul>
+                        <li>whether the website is genuine or not.</li>
+                        <li>Is it safe to make payment through that website</li>
+
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                     <li> is it safe to access the website</li>
+
+                    </ul>
+                </div>
+
+                
+
+        </div>
+
+
+        <div class="count">
+                    
+            <div class="count-item count-item1">
+                <span>2500</span>
+                <p>Sites Scanned</p>
+            </div>
+            <div class="count-item count-item2">
+                <span>500</span>
+                <p>Low Risk</p>
+            </div>
+           
+            <div class="count-item count-item4">
+                <span>20</span>
+                <p>High Risk</p>
+            </div>
+
+        </div>
+
+        <div class="cta-banner">
+            <div class="cta-banner-left">
+                <p class="cta-line">What are you waiting for 
+                </p>
+            </div>
+            <div class="cta-banner-right">
+                <a href="{% url 'contact' %}" class="btn-cta">Contact Us</a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    </section>
+    
+
+    <br><br>
+    <table>
+
+        <center><h2>Contributers</h2></center>
+        <br><br>
+        <tr>
+          <th>Name</th>
+          <th>Contribution</th>
+        </tr>
+        <tr>
+          <td>Aditya More</td>
+          <td>Backend Development</td>
+        </tr>
+        <tr>
+          <td>Shubham Zende</td>
+          <td>FrontEnd Development</td>
+        </tr>
+        <tr>
+          <td>Prasad Patil</td>
+          <td>FrontEnd Development & Documentation</td>
+        </tr>
+        <tr>
+          <td>Jay Bahirat</td>
+          <td>Data Collection & Research</td>
+        </tr>
+      </table>
+
+    
+
+   
+
+</body>
+</html>

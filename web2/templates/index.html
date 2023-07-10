@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Is It Phishy</title>
+    <script src="https://kit.fontawesome.com/d5f016b17c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="{% static  'CSS/style.css' %}">
+    
+
+
+</head>
+<body>
+
+<header class="header"> 
+
+    <nav class="navbar">
+
+        <div class="container">
+
+
+            <a href="{% url 'home' %}"><img src="{% static  './img/logo1.png' %}" class="logo lg-heading text-light" height="150px"></a>
+            <ul class="nav_items ">
+                <li class="list-items" > <a href="{% url 'home' %}">home</a></li>
+                <li class="list-items"> <a href="{% url 'about'%}">about</a></li>
+                <li class="list-items"> <a href="{% url 'contact'%}">contact</a></li>
+                <li class="list-items"> <a href="{% url 'complaint'%}">complaint</a></li>
+                <li class="list-items"> <a href="{% url 'logout' %}">Logout</a></li>
+    
+    
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <div class="header-containt">
+
+        <h1 class="lg-heading text-light main-heading">IS IT PHISHY</h1>
+        <p class="text-light">Analyze suspicious files, domains. IPs and URLs to detect malware and other breaches</p><br>
+        
+         <input type="text" class="btn2 btn primery-btn text-red md-heading" placeholder="           Enter URL" >
+         <br><br>
+         
+         <button class="btn primery-btn text-red md-heading">Submit</button>
+
+
+    </div>
+</header>
+    
+    
+</body>
+</html>

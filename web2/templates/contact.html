@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Is It Phishy</title>
+    <script src="https://kit.fontawesome.com/d5f016b17c.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type='text/css' href="{% static  'CSS/style.css' %}">
+
+</head>
+<body>
+
+
+    <nav class="navbar bg-dark">
+
+        <div class="container">
+
+
+            <a href="{% url 'home' %}"><img src="{% static  './img/logo1.png' %}" class="logo lg-heading text-light" height="150px"></a>
+            <ul class="nav_items ">
+                <li class="list-items" > <a href="{% url 'home' %}">home</a></li>
+                <li class="list-items"> <a href="{% url 'about'%}">about</a></li>
+                <li class="list-items"> <a href="{% url 'contact'%}">contact</a></li>
+                <li class="list-items"> <a href="{% url 'complaint'%}">complaint</a></li>
+                <li class="list-items"> <a href="{% url 'logout' %}">Logout</a></li>
+    
+            </ul>
+        </div>
+
+
+    </nav>
+
+
+    <section class="contact-form">
+        <div class="container">
+            <h2 class="lg-heading text-black about-heading">Contact To Our Team</h2>
+
+            <p class="text-gray">If you have any Query you can contact to our team on the address given below or you can do mail also</p>
+
+        <div class="container">
+            <div class="form-wrapper">
+
+                <div class="company-adress">
+                    <div class="address-group">
+                        <i class="fas fa-map-marker-alt fa-2x text-red"></i>
+                        <h2 class="text-gray md-heading">Location</h2>
+                        <p>Marathwada Mitra Mandal Collage Of Commerce Deccan F.C Road Pune Pin -411052</p>
+                    </div>
+                    <div class="address-group">
+                        <i class=" far fa-envelope fa-2x text-red"></i>
+                        <h2 class="text-gray md-heading">Email</h2>
+                        <p>abcdefg983@gmail.com</p>
+                    </div>
+                    <div class="address-group">
+                        <i class=" fas fa-phone-square-alt fa-2x text-red"></i>
+                        <h2 class="text-gray md-heading">call</h2>
+                        <p>+91-5252464685</p>
+                    </div><br>
+
+                    
+                </div>
+                
+    
+      
+    </section>
+
+ 
+   
+
+</body>
+</html>
